@@ -61,19 +61,23 @@ a { color: #9CF; text-decoration: none; outline: none; }
 a:hover { color: #9CC; text-decoration: none; cursor: pointer; }
 .mail{  float:right; padding-top: 3px;}
 span.design {float:right; margin: 6px 50px 0 0; font-size:11px; }
-.design a, a:hover { color: #666; text-decoration: none; outline: none;  cursor: default;}
-.twitter  {  }
-.github  { padding-right:8px; }
+.design a, .design a:hover { color: #666; text-decoration: none; outline: none;  cursor: default;}
+
+.github  {   }
 .linkedin span {
-background: url("images/icon-sprite.png") no-repeat scroll 0 0 transparent; padding:0 0 0 18px;   }
+background: url("images/icon-sprite2.png") no-repeat scroll 0 0 transparent; padding:0 0 0 18px;   }
 .twitter span{
-background: url("images/icon-sprite.png") no-repeat scroll -44px 0 transparent; padding:0 0 0 18px;   }
+background: url("images/icon-sprite2.png") no-repeat scroll -44px 0 transparent; padding:0 0 0 18px;   }
+.codepen span{
+background: url("images/icon-sprite2.png") no-repeat scroll -67px 0 transparent; padding:0 0 0 18px;   }
+
+
 h1 { font-size: 30px; margin-top: 50px; }
 li { margin-top: 10px; }
 /*-- page areas --*/ 
 .vspace { position:relative; width:10px; height:600px; }
 #content {  position: absolute; left: 50%; top: 60px; margin-left: -400px; width: 800px; height: 600px; overflow: hidden;  }
-#footer {    /* position: fixed; bottom: 0;  */
+.footerLinks {    /* position: fixed; bottom: 0;  */
  	position: relative;  
  	z-index:5;
 	width: 100%; padding: 20px 30px; 
@@ -88,7 +92,15 @@ box-shadow: 0 -5px 10px #bbb;
  	margin: 0 -10px;
   	/* text-align: center;  */
  }
-#footer a { margin: 0 15px; }
+ 
+.footerLinks a { margin: 0 15px; }
+.footerLinks .linkHoverText { opacity: 0;font-size: 11px; position: absolute; top: 5px; }
+.footerLinks a:hover + .linkHoverText { color: #666; opacity: 1;}
+.linkedin + .linkHoverText {left: 33px;}
+.twitter + .linkHoverText{left: 85px;}
+.github + .linkHoverText {left: 134px;}
+.codepen + .linkHoverText {left: 175px;}
+
 #copyright { font-size: 10px; margin: 20px 50px 0 0; text-align:right;  }
 #copyright a { margin: 0;}
 
