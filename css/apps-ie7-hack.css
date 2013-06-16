@@ -1,0 +1,30 @@
+
+/* IE7 needs the fields to be floated as well as the labels */
+
+input, textarea {
+  float: right;
+}
+
+#formButtons {
+  clear: both;
+}
+
+/*
+  IE7 needs an ickier approach to vertical/horizontal centring with fixed positioning.
+  The negative margins are half the element's width/height.
+*/
+
+#contactForm.positioned, .statusMessage {
+  left: 50%;
+  top: 50%;
+}
+
+#contactForm.positioned {
+  margin-left: -20em;
+  margin-top: -16.5em;
+}
+
+.statusMessage {
+  margin-left: -15em;
+  margin-top: -1em;
+}

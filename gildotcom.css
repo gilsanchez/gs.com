@@ -94,12 +94,18 @@ box-shadow: 0 -5px 10px #bbb;
  }
  
 .footerLinks a { margin: 0 15px; }
-.footerLinks .linkHoverText { opacity: 0;font-size: 11px; position: absolute; top: 5px; }
+.footerLinks .linkHoverText { opacity: 0;font-size: 10px; position: absolute; top: 5px; 
+display:block;  background-color: #eee; padding: 1px 3px; 
+
+ -moz-box-shadow:    0 0 3px 2px #ccc;
+  -webkit-box-shadow: 0 0 3px 2px #ccc;
+  box-shadow:         0 0 3px 2px #ccc;
+ }
 .footerLinks a:hover + .linkHoverText { color: #666; opacity: 1;}
-.linkedin + .linkHoverText {left: 33px;}
-.twitter + .linkHoverText{left: 85px;}
-.github + .linkHoverText {left: 134px;}
-.codepen + .linkHoverText {left: 175px;}
+.linkedin + .linkHoverText {left: 30px;}
+.twitter + .linkHoverText{left: 82px;}
+.github + .linkHoverText {left: 131px;}
+.codepen + .linkHoverText {left: 173px;}
 
 #copyright { font-size: 10px; margin: 20px 50px 0 0; text-align:right;  }
 #copyright a { margin: 0;}

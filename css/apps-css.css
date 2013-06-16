@@ -1,0 +1,303 @@
+
+
+/* Add some margin to the page and set a default font and colour */
+
+.email-form { 
+  font-family: "Georgia", serif; 
+}
+ 
+/* Add curved borders to various elements */
+
+#contactForm, .statusMessage, input[type="submit"], input[type="button"] {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;  
+  border-radius: 10px;
+}
+
+
+/* Style for the contact form and status messages */
+
+#contactForm, .statusMessage {
+  color: #666;
+  background-color: #DFE0E5;
+  background: -webkit-gradient( linear, left bottom, left top, color-stop(0,#909090), color-stop(1, #DFE0E5 ) );
+  background: -moz-linear-gradient( center bottom, #909090 0%, #DFE0E5  100% );  
+  border: 1px solid #aaa;
+  -moz-box-shadow: 0 0 1em rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1em rgba(0, 0, 0, .5);
+  opacity: .95; 
+ /* background: linear-gradient(64deg, #FFFFFF 60%, #EBEBEB 100%) repeat scroll 0 0 transparent; */
+}
+
+
+/* The form dimensions */
+
+#contactForm {
+  width: 30em;
+  height: 28em;
+  padding: 0 1.5em 1.5em 1.5em;
+  margin: 0 auto;
+}
+
+
+/* Position the form in the middle of the window (if JavaScript is enabled) */
+
+#contactForm.positioned {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 3%;
+  margin-bottom: auto;    
+  z-index: 5;
+}
+
+
+/* Dimensions and position of the status messages */
+
+.statusMessage {
+  display: none;
+  margin: auto;
+  width: 30em;
+  height: 2em;
+  padding: 1.5em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.statusMessage p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* The header at the top of the form */
+
+#contactForm h2 {
+  font-size: 2em;
+  font-style: italic;
+  letter-spacing: .05em;
+  margin: 0 0 1em -.75em;
+  padding: 0.6em 1em;
+  width: 14.5em;  
+  color: #aeb6aa;
+  background: #dfe0e5 url('/images/stamp.jpg') no-repeat 12em -3em; /* http://morguefile.com/archive/display/606433 */
+  border-bottom: 1px solid #aaa;
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;  
+  border-radius: 10px 10px 0 0;
+}
+
+
+/* Give form elements consistent margin, padding and line height */
+
+#contactForm ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#contactForm ul li {
+  margin: .9em 0 0 0;
+  padding: 0;
+}
+
+#contactForm input, #contactForm label {
+  line-height: 1em;
+}
+
+
+/* The field labels */
+
+label {
+  display: block;
+  float: left;
+  clear: left;
+  text-align: right;
+  width: 25%;
+  padding: .4em 0 0 0;
+  margin: .15em .5em 0 0;
+  font-weight: bold;
+  text-shadow:1px 1px rgba(255,255,255,0.4);
+}
+
+
+/* The fields */
+
+input, textarea {
+  display: block;
+  margin: 0;
+  padding: .4em;
+  width: 67%;
+  font-family: "Georgia", serif;
+  font-size: 1em;
+  border: 1px solid #aaa;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;    
+  border-radius: 5px;
+  -moz-box-shadow: rgba(0,0,0,.2) 0 1px 4px inset;
+  -webkit-box-shadow: rgba(0,0,0,.2) 0 1px 4px inset;
+  box-shadow: rgba(0,0,0,.2) 0 1px 4px inset;
+  background: #fff;
+}
+
+textarea {
+  height: 10em;
+  line-height: 1.5em;
+  resize: none;
+}
+
+
+/* Place a border around focused fields, and hide the inner shadow */
+
+#contactForm *:focus {
+ /* border: 1px solid #66f;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none; */
+  outline: none;
+  -moz-box-shadow: 1px 1px 25px #777;
+  -webkit-box-shadow: 1px 1px 25px #FFFFFF;;
+    box-shadow: 1px 1px 25px #FFFFFF;
+      border: 1px solid #666;
+
+}
+/*
+#contactForm .input[type="submit"]:focus, #contactForm.input[type="button"]:focus {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none; }
+*/
+
+/* Display correctly filled-in fields with a green background */
+
+input[type="text"]:valid, input[type="email"]:valid, textarea:valid {
+  background: #dfd;
+}
+
+
+/* The Send and Cancel buttons */
+
+X.input[type="submit"], X.input[type="button"] {
+  float: right;
+  margin: 2em 1em 0 1em;
+  width: 10em;
+  padding: .5em;
+  border: 1px solid #666;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;  
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  color: #fff;
+  background: #0a0;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: bold;
+  opacity: .7;
+  -webkit-appearance: none;
+  -moz-transition: opacity .5s;
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+#contactForm .button-blue ,
+#contactForm .button-grey,
+#contactForm .button-dark-grey
+{   float: right;
+  margin: 2em 1em 0 1em;
+  width: 10em; font-family:"Georgia",Arial,sans-serif; }
+.button-blue{font-weight:normal;color:#474747;text-shadow:1px 1px rgba(255,255,255,0.4);font-size:16px;line-height:22px;font-family:Verdana,Arial,sans-serif;padding:10px 30px;line-height:1em;
+  display:inline-block;cursor:pointer;text-align:center;text-decoration:none;color:white;text-shadow:-1px -1px rgba(0,0,0,0.4);-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-box-shadow:inset 1px 1px 1px 0px rgba(0,0,0,0.3);-moz-box-shadow:inset 1px 1px 1px 0px rgba(0,0,0,0.3);box-shadow:inset 1px 1px 1px 0px rgba(0,0,0,0.3);background:#3982a4;background:-webkit-linear-gradient(95deg, #3982a4, #58a9ce);background:-moz-linear-gradient(95deg, #3982a4, #58a9ce);background:-o-linear-gradient(95deg, #3982a4, #58a9ce);background:linear-gradient(95deg, #3982a4,#58a9ce);*zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF3982A4', endColorstr='#FF58A9CE')}
+.button-blue[disabled]{opacity:.2;background:rgba(0,0,0,0.6);cursor:default}
+.button-blue:hover, .button-blue:focus{background:#347a99;background:-webkit-linear-gradient(95deg, #347a99, #70c5ec);background:-moz-linear-gradient(95deg, #347a99, #70c5ec);background:-o-linear-gradient(95deg, #347a99, #70c5ec);background:linear-gradient(95deg, #347a99,#70c5ec);*zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF347A99', endColorstr='#FF70C5EC')}
+.button-blue:active{background:#367f9f}
+
+.button-grey{font-weight:normal;color:#474747;text-shadow:1px 1px rgba(255,255,255,0.4);font-size:16px;line-height:22px;font-family:Verdana,Arial,sans-serif;padding:10px 30px;line-height:1em;
+  display:inline-block;cursor:pointer;text-align:center;text-decoration:none;color:white;text-shadow:-1px -1px rgba(0,0,0,0.4);-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-box-shadow:inset 1px 1px 1px 0px rgba(0,0,0,0.3);-moz-box-shadow:inset 1px 1px 1px 0px rgba(0,0,0,0.3);box-shadow:inset 1px 1px 1px 0px rgba(0,0,0,0.3);background:#5e5b5b;background:-webkit-linear-gradient(95deg, #5e5b5b, #7e7e7e);background:-moz-linear-gradient(95deg, #5e5b5b, #7e7e7e);background:-o-linear-gradient(95deg, #5e5b5b, #7e7e7e);background:linear-gradient(95deg, #5e5b5b,#7e7e7e);*zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF5E5B5B', endColorstr='#FF7E7E7E')}
+.button-grey[disabled]{opacity:.2;background:rgba(0,0,0,0.6);cursor:default}
+.button-grey:hover, .button-grey:focus{background:#626161;background:-webkit-linear-gradient(95deg, #626161, #b4b4b5);background:-moz-linear-gradient(95deg, #626161, #b4b4b5);background:-o-linear-gradient(95deg, #626161, #b4b4b5);background:linear-gradient(95deg, #626161,#b4b4b5);*zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF626161', endColorstr='#FFB4B4B5')}
+.button-grey:active{background:#5d5a5a}
+
+.button-dark-grey{font-weight:normal;color:#474747;text-shadow:1px 1px rgba(255,255,255,0.4);font-size:16px;line-height:22px;
+  font-family:Verdana,Arial,sans-serif;padding:10px 30px;line-height:1em;
+  display:inline-block;cursor:pointer;text-align:center;text-decoration:none;color:white;text-shadow:-1px -1px rgba(0,0,0,0.4);
+
+
+  -webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px;
+  -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
+  -webkit-box-shadow:inset 1px 1px 1px 0px rgba(0,0,0,0.3);-moz-box-shadow:inset 1px 1px 1px 0px rgba(0,0,0,0.3);
+  box-shadow:inset 1px 1px 1px 0px rgba(0,0,0,0.3);
+  background:#2d2f33;
+
+  background:url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0icmdiYSgwLCAwLCAwLCAwLjEpIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSJyZ2JhKDAsIDAsIDAsIDAuNCkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=");
+  background:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0.1)), color-stop(100%, rgba(0,0,0,0.4)));
+  background:-webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.4));
+  background:-moz-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.4));
+  background:-o-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.4));
+  background:linear-gradient(top, rgba(0,0,0,0.1),rgba(0,0,0,0.4));*zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColor
+    str='#FF2D2F33', endColorstr='#FF232428');
+  -webkit-box-shadow:0px 2px 1px 0px rgba(255,255,255,0.1),inset 0px 1px 1px 1px rgba(0,0,0,0.3);-moz-box-shadow:0px 2px 1px 0px rgba(255,255,255,0.1),inset 0px 1px 1px 1px rgba(0,0,0,0.3);box-shadow:0px 2px 1px 0px rgba(255,255,255,0.1),inset 0px 1px 1px 1px rgba(0,0,0,0.3);
+-webkit-appearance:none;
+}
+.button-dark-grey[disabled]{opacity:.2;background:rgba(0,0,0,0.6);cursor:default}
+.button-dark-grey:hover, .button-dark-grey:focus{
+  background:#2d2f33;
+  background:url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0icmdiYSgwLCAwLCAwLCAwLjIpIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSJyZ2JhKDAsIDAsIDAsIDAuNCkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=");
+  background:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0.2)), color-stop(100%, rgba(0,0,0,0.4)));
+  background:-webkit-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  background:-moz-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  background:-o-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  background:linear-gradient(top, rgba(0,0,0,0.2),rgba(0,0,0,0.4));*zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF292A2E', endColorstr='#FF232428')}
+.button-dark-grey:active{background:rgba(0,0,0,0.4);*zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF232428', endColorstr='#FF232428')}
+.button-white{font-weight:normal;color:#474747;text-shadow:1px 1px rgba(255,255,255,0.4);font-size:16px;line-height:22px;font-family:Verdana,Arial,sans-serif;padding:10px 30px;line-height:1em;
+  display:inline-block;cursor:pointer;text-align:center;text-decoration:none;color:white;text-shadow:-1px -1px rgba(0,0,0,0.4);-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-box-shadow:inset 1px 1px 1px 0px rgba(0,0,0,0.3);-moz-box-shadow:inset 1px 1px 1px 0px rgba(0,0,0,0.3);box-shadow:inset 1px 1px 1px 0px rgba(0,0,0,0.3);background:-webkit-gradient(linear, 0 bottom, 0 0, from(#ededed), to(#fff));background:-webkit-linear-gradient(90deg, #ededed, #fff);background:-moz-linear-gradient(90deg, #ededed, #fff);background:-o-linear-gradient(90deg, #ededed, #fff);background:linear-gradient(90deg, #ededed,#ffffff);*zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFEDEDED', endColorstr='#FFFFFFFF');border-bottom:1px solid #fff;color:#474747;text-shadow:1px 1px rgba(255,255,255,0.4)}
+
+
+
+
+
+input[type="submit"]:hover,
+input[type="submit"]:active,
+input[type="button"]:hover,
+input[type="button"]:active {
+  cursor: pointer;
+  opacity: 1;
+}
+
+X.input[type="submit"]:active, X.input[type="button"]:active {
+  color: #333;
+  background: #eee;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+}
+
+X.input[type="button"] {
+  background: #f33;
+}
+
+/* Header/footer boxes */
+
+.wideBox {
+  clear: both;
+  text-align: center;
+  margin: 70px;
+  padding: 10px;
+  background: #ebedf2;
+  border: 1px solid #333;
+}
+
+.wideBox h1 {
+  font-weight: bold;
+  margin: 20px;
+  color: #666;
+  font-size: 1.5em;
+}

@@ -13,7 +13,9 @@
   	@import url(gildotcom.css?v=1.2);
   </style>
    
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="css/apps-css.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+
   <!-- 
   <script>window.jQuery || document.write('<script src="js/jquery.min.js">\x3C/script>');</script>
   -->
@@ -48,6 +50,7 @@
     <div id="navigation">
     	<b><a href="/">Gil Sanchez</a></b>
        <!--  a class="mail" href="xmailto:gilsanchezXgmail.com?Subject=Introduction(.com)">gilsanchezXgmail.com</a -->
+       <a class="mail"  href="#contactForm">~ email me ~</a>
     </div>
     </nav>   
     
@@ -96,6 +99,34 @@
 
 	</footer>
  
+<div class="email-form"> 
+  <div id="sendingMessage" class="statusMessage"><p>Sending your message. Please wait...</p></div>
+  <div id="successMessage" class="statusMessage"><p>Thanks for sending your message! We'll get back to you shortly.</p></div>
+  <div id="failureMessage" class="statusMessage"><p>There was a problem sending your message. Please try again.</p></div>
+  <div id="incompleteMessage" class="statusMessage"><p>Please complete all the fields in the form before sending.</p></div>
+  <form id="contactForm" action="application/processForm.php" method="post">
+    <h2>Send me an email...</h2>
+    <ul>
+      <li>
+        <label for="senderName">Your Name</label>
+        <input type="text" name="senderName" id="senderName" placeholder="Please type your name" required="required" maxlength="40" />
+      </li>
+      <li>
+        <label for="senderEmail">Email Address</label>
+        <input type="email" name="senderEmail" id="senderEmail" placeholder="Please type your email address" required="required" maxlength="50" />
+      </li>
+      <li>
+        <label for="message"> Message</label>
+        <textarea name="message" id="message" placeholder="Please type your message" required="required" cols="80" rows="10" maxlength="10000"></textarea>
+      </li>
+    </ul>
+    <div id="formButtons">
+      <input type="submit" id="sendMessage" class="button-dark-grey" name="sendMessage" value="Send Email" />
+      <input type="button" id="cancel" class="button-dark-grey" name="cancel" value="Cancel" />
+    </div>
+  </form>
+</div>
+ 
 
 <script type="text/javascript">
  
@@ -122,6 +153,7 @@ $(function() {
 	gildotcom.init();
 });
 </script>
+<script type="text/javascript" src="js/apps-min.js?v=1.1"></script>
 <!-- script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script  -->
 
 </html>
