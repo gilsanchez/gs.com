@@ -83,7 +83,7 @@ $(function() {
         $('#successMessage').fadeIn().delay(messageDelay).fadeOut();
         $('#senderName').val( "" );
         $('#senderEmail').val( "" );
-        $('#message').val( "" );
+        $('#message').val( "" ); 
         $('#content').delay(messageDelay + 500).fadeTo( 'slow', 1 );
         //$('.email-form').delay(messageDelay + 500).remove();
 
