@@ -13,21 +13,21 @@
  */
 @font-face {
     font-family: 'SanchezRegular';
-    src: url('Sanchezregular-webfont.eot');
-    src: url('Sanchezregular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Sanchezregular-webfont.woff') format('woff'),
-         url('Sanchezregular-webfont.ttf') format('truetype'),
-         url('Sanchezregular-webfont.svg#SanchezRegular') format('svg');
+    src: url('/fonts/Sanchezregular-webfont.eot');
+    src: url('/fonts/Sanchezregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Sanchezregular-webfont.woff') format('woff'),
+         url('/fonts/Sanchezregular-webfont.ttf') format('truetype'),
+         url('/fonts/Sanchezregular-webfont.svg#SanchezRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'SanchezItalic';
-    src: url('fonts/Sanchezregular-ita-webfont.eot');
-    src: url('fonts/Sanchezregular-ita-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Sanchezregular-ita-webfont.woff') format('woff'),
-         url('fonts/Sanchezregular-ita-webfont.ttf') format('truetype'),
-         url('fonts/Sanchezregular-ita-webfont.svg#SanchezItalic') format('svg');
+    src: url('/fonts/fonts/Sanchezregular-ita-webfont.eot');
+    src: url('/fonts/fonts/Sanchezregular-ita-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/fonts/Sanchezregular-ita-webfont.woff') format('woff'),
+         url('/fonts/fonts/Sanchezregular-ita-webfont.ttf') format('truetype'),
+         url('/fonts/fonts/Sanchezregular-ita-webfont.svg#SanchezItalic') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -44,11 +44,13 @@ border-top:2px #ddd solid;
 -moz-box-shadow: 0 5px 10px #bbb; 
 box-shadow: 0 5px 10px #bbb; 
 margin: 0 -10px; text-align: left; z-index: 5; 
-font-family: SanchezRegular;
+font-family: 'SanchezRegular', Tahoma, Arial, sans-serif;
 }
-#navigation b { font-weight: normal; font-size: 28px; margin-right: 200px; text-shadow: 0 2px 5px #333; filter: dropshadow(color=#333333, offx=0, offy=2);  }
+#navigation h1 { font-weight: normal; font-size: 28px; float:left;
+    margin-right: 200px; text-shadow: 0 2px 5px #333; 
+    filter: dropshadow(color=#333333, offx=0, offy=2);  }
 #navigation a { color: #666; margin-right: 50px; }
-#navigation a:hover { color: #ccc; text-decoration: none; }
+#navigation a:hover { color: #750128; text-decoration: none; }
 #navigation a.current { color: #fff; text-shadow: 0 0 10px #ccc; }
 /*-- resets and defaults --*/
 html, body, div, span, iframe,
@@ -56,7 +58,7 @@ h1, h2, h3, h4, h5, h6, p, pre,
 a, code, img, fieldset, form, label, legend,
 table, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: none; outline: none; font-size: 100%; vertical-align: baseline; background: transparent; }
 body { 	 background: url("images/bg.gif") repeat-x scroll left top #848484; color: #333; line-height: 1; 
-font-family: Tahoma, Arial, sans-serif; /*  NadiaSerifNormal, */}
+font-family: 'SanchezRegular', Tahoma, Arial, sans-serif; /*  NadiaSerifNormal, */}
 a { color: #9CF; text-decoration: none; outline: none; }
 a:hover { color: #9CC; text-decoration: none; cursor: pointer; }
 .mail{  float:right; padding-top: 3px;}
@@ -65,14 +67,17 @@ span.design {float:right; margin: 6px 50px 0 0; font-size:11px; }
 
 .github  {   }
 .linkedin span {
-background: url("images/icon-sprite2.png") no-repeat scroll 0 0 transparent; padding:0 0 0 18px;   }
+background: url("images/icon-sprite3.png") no-repeat scroll 0 0 transparent; padding:0 0 0 18px;   }
 .twitter span{
-background: url("images/icon-sprite2.png") no-repeat scroll -44px 0 transparent; padding:0 0 0 18px;   }
+background: url("images/icon-sprite3.png") no-repeat scroll -44px 0 transparent; padding:0 0 0 18px;   }
 .codepen span{
-background: url("images/icon-sprite2.png") no-repeat scroll -67px 0 transparent; padding:0 0 0 18px;   }
+background: url("images/icon-sprite3.png") no-repeat scroll -67px 0 transparent; padding:0 0 0 18px;   }
+.gs-email span{
+background: url("images/icon-sprite3.png") no-repeat scroll -92px 0 transparent; padding:0 0 0 18px;   }
 
 
-h1 { font-size: 30px; margin-top: 50px; }
+
+h1.x { font-size: 30px; margin-top: 50px; }
 li { margin-top: 10px; }
 /*-- page areas --*/ 
 .vspace { position:relative; width:10px; height:600px; }
@@ -106,6 +111,7 @@ display:block;  background-color: #eee; padding: 1px 3px;
 .twitter + .linkHoverText{left: 82px;}
 .github + .linkHoverText {left: 131px;}
 .codepen + .linkHoverText {left: 173px;}
+.gs-email + .linkHoverText {left: 228px;}
 
 #copyright { font-size: 10px; margin: 20px 50px 0 0; text-align:right;  }
 #copyright a { margin: 0;}
