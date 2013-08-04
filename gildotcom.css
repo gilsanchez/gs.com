@@ -62,9 +62,31 @@ font-family: 'SanchezRegular', Tahoma, Arial, sans-serif; /*  NadiaSerifNormal, 
 a { color: #9CF; text-decoration: none; outline: none; }
 a:hover { color: #9CC; text-decoration: none; cursor: pointer; }
 .mail{  float:right; padding-top: 3px;}
-span.design {float:right; margin: 6px 50px 0 0; font-size:11px; }
-.design a, .design a:hover { color: #666; text-decoration: none; outline: none;  cursor: default;}
 
+
+
+h1.x { font-size: 30px; margin-top: 50px; }
+li { margin-top: 10px; }
+/*-- page areas --*/ 
+.vspace { position:relative; width:10px; height:600px; }
+#content {  position: absolute; left: 50%; top: 60px; margin-left: -400px; width: 800px; height: 600px; overflow: hidden;  }
+
+.footerLinks {   
+ 	position: relative;  
+ 	z-index:5;
+	width: 100%; padding: 20px 30px; 
+	background-color: #666; 
+	color: #eee; 
+	background: url("images/brushed_alu.png") repeat scroll 0 0 transparent;
+	color: #666;  /*  #eee;  */ 
+	border-bottom:2px #ddd solid;
+    -webkit-box-shadow: 0 -5px 10px #bbb; 
+    -moz-box-shadow: 0 -5px 10px #bbb; 
+    box-shadow: 0 -5px 10px #bbb;
+ 	margin: 0 -10px;
+  	/* text-align: center;  */
+ }
+ 
 .github  {   }
 .linkedin span {
 background: url("images/icon-sprite3.png") no-repeat scroll 0 0 transparent; padding:0 0 0 18px;   }
@@ -75,30 +97,9 @@ background: url("images/icon-sprite3.png") no-repeat scroll -67px 0 transparent;
 .gs-email span{
 background: url("images/icon-sprite3.png") no-repeat scroll -92px 0 transparent; padding:0 0 0 18px;   }
 
+.footerLinks a { margin: 0 15px; position: relative;}
+.footerLinks a:hover { top:-1px;   opacity: .7; }
 
-
-h1.x { font-size: 30px; margin-top: 50px; }
-li { margin-top: 10px; }
-/*-- page areas --*/ 
-.vspace { position:relative; width:10px; height:600px; }
-#content {  position: absolute; left: 50%; top: 60px; margin-left: -400px; width: 800px; height: 600px; overflow: hidden;  }
-.footerLinks {    /* position: fixed; bottom: 0;  */
- 	position: relative;  
- 	z-index:5;
-	width: 100%; padding: 20px 30px; 
-	background-color: #666; 
-	color: #eee; 
-	background: url("images/brushed_alu.png") repeat scroll 0 0 transparent;
-	color: #666;  /*  #eee;  */ 
-	border-bottom:2px #ddd solid;
--webkit-box-shadow: 0 -5px 10px #bbb; 
--moz-box-shadow: 0 -5px 10px #bbb; 
-box-shadow: 0 -5px 10px #bbb;
- 	margin: 0 -10px;
-  	/* text-align: center;  */
- }
- 
-.footerLinks a { margin: 0 15px; }
 .footerLinks .linkHoverText { opacity: 0;font-size: 10px; position: absolute; top: 5px; 
 display:block;  background-color: #eee; padding: 1px 3px; 
 
@@ -106,12 +107,18 @@ display:block;  background-color: #eee; padding: 1px 3px;
   -webkit-box-shadow: 0 0 3px 2px #ccc;
   box-shadow:         0 0 3px 2px #ccc;
  }
+ /*   
 .footerLinks a:hover + .linkHoverText { color: #666; opacity: 1;}
 .linkedin + .linkHoverText {left: 30px;}
 .twitter + .linkHoverText{left: 82px;}
 .github + .linkHoverText {left: 131px;}
 .codepen + .linkHoverText {left: 173px;}
 .gs-email + .linkHoverText {left: 228px;}
+*/
+
+.footerLinks .design {float:right; margin: 6px 50px 0 0; font-size:11px; }
+.footerLinks .design a, .footerLinks .design a:hover { color: #666;text-decoration:none;outline:none;cursor:default;top:0;opacity:1;}
+
 
 #copyright { font-size: 10px; margin: 20px 50px 0 0; text-align:right;  }
 #copyright a { margin: 0;}
